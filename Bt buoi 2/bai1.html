@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table1</title>
+  </head>
+  <body style="width: 50%; margin: 20px auto">
+    <div style="background: floralwhite">
+      <form action="#">
+        <fieldset>
+          <legend>Thông Tin Tài Khoản</legend>
+          <label for="username">Họ và Tên</label>
+          <input type="text" id="username" />
+          <br /><br />
+          <label for="mailbox">Hòm thư</label>
+          <input type="text" id="mailbox" />
+          <br /><br />
+          <label for="pw">Mật khẩu</label>
+          <input type="password" id="pw" />
+          <br /><br />
+          <label for="pw2">Xác nhận Mật Khẩu</label>
+          <input type="password" id="pw2" />
+          <br /><br />
+        </fieldset>
+      </form>
+      <br />
+      <form action="#">
+        <fieldset>
+          <legend>Thông Tin Cá Nhân</legend>
+          <label for="gender">Giới Tính:</label>
+          <label><input type="radio" name="gender" value="male" />Nam </label>
+          <label><input type="radio" name="gender" value="female" />Nữ </label>
+          <label><input type="radio" name="gender" value="other" />Khác </label>
+          <br /><br />
+          <label for="like">Sở Thích:</label>
+          <label><input type="checkbox" />Thể Thao </label>
+          <label><input type="checkbox" />Âm Nhạc </label>
+          <label><input type="checkbox" />Du Lịch</label>
+          <br /><br />
+          <label for="date">Ngày Sinh:</label>
+          <input type="date" id="date" />
+          <br /><br />
+          <label for="country">Quốc Gia:</label>
+          <select name="country" id="country">
+            <option value="vn">Viet Nam</option>
+            <option value="us">My</option>
+            <option value="uk">Anh</option>
+            <option value="rf">Phap</option>
+            <option value="jv">Nhat ban</option>
+          </select>
+          <br /><br />
+          <label for="phone">Điện Thoại:</label>
+          <input type="text" id="phone" />
+          <br /><br />
+          <label for="address">Địa Chỉ Liên Hệ:</label>
+          <br />
+          <textarea name="address" id="address" cols="30" rows="5"></textarea>
+          <br /><br />
+          <div style="text-align: center">
+            <button type="submit">Gửi</button>
+            <button type="reset">Hủy</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
