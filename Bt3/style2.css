@@ -1,0 +1,12 @@
+.block1 ul {
+  list-style-type: circle;
+}
+.block2 ul {
+  list-style-type: square;
+}
+.block3 ul {
+  list-style-type: none;
+}
+.block3 li::before {
+  content: "😊";
+}
