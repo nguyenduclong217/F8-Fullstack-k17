@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="!#">
+      <fieldset>
+        <div class="table">
+          <p>Thông Tin Cá Nhân</p>
+          <div class="block1">
+            <div class="info">
+              <label for="position" class="title">Tước vị:</label>
+              <select name="position" id="position">
+                <option value="">--Chọn Chức Vị--</option>
+                <option value="">Ông</option>
+                <option value="">BÀ</option>
+                <option value="">Bố</option>
+                <option value="">Mẹ</option>
+                <option value="">Cụ</option>
+              </select>
+              <label for="name" class="title">Họ tên:</label>
+              <input type="text" id="name" />
+              <label for="date" class="title">Ngày sinh:</label>
+              <label><input type="date" /></label>
+              <label for="time" class="title">Giờ sinh:</label>
+              <label><input type="time" /></label>
+              <label for="gender" class="title">Giới tính:</label>
+              <label
+                ><input type="radio" name="gender" /><span>Nam</span></label
+              >
+              <label><input type="radio" name="gender" /><span>Nữ</span></label>
+              <label for="bobby" class="title">Sở Thích:</label>
+              <label><input type="checkbox" /> <span>Thể Thao</span> </label>
+              <label><input type="checkbox" /><span>Du Lịch</span></label>
+              <label><input type="checkbox" /><span>Ẩm Thực</span></label>
+              <label for="bobby" class="title">&nbsp</label>
+              <label> <input type="checkbox" /><span>Âm Nhạc</span></label>
+              <label>
+                <input type="checkbox" /><span>Học Ngoại Ngữ</span></label
+              >
+              <label> <input type="checkbox" /><span>Kinh Doanh</span></label>
+            </div>
+          </div>
+        </div>
+        <div class="table">
+          <p>Thông Tin Liên Hệ</p>
+          <div class="block2">
+            <div class="info">
+              <label for="phone" class="title">Điện thoại:</label>
+              <label><input type="tel" id="phone" /></label>
+              <label for="email" class="title">Email:</label>
+              <label
+                ><input type="email" placeholder="abc@gmail.com" id="email"
+              /></label>
+              <label for="wed" class="title">Website:</label>
+              <label><input type="text" id="wed" /></label>
+              <label for="tinh" class="title">Mã tỉnh:</label>
+              <label><input type="text" id="tinh" /></label>
+              <label for="address" class="title">Địa chỉ:</label>
+              <label>
+                <textarea
+                  name="address"
+                  id="address"
+                  cols="20"
+                  rows="5"
+                  ;
+                ></textarea>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="table">
+          <p>Chỉ Số Sức Khỏe</p>
+          <div class="block3">
+            <div class="info">
+              <label for="height" class="title">Chiều cao(cm):</label>
+              <label><input type="number" value="27" /></label>
+              <label for="weight" class="title">Cân Nặng[45kg-100kg]:</label>
+              <input type="range" id="ll" />
+              <label for="bit" class="title">Nhịp tim[60-100 nhịp/phút]:</label>
+              <progress
+                value="30"
+                max="100"
+                style="accent-color: green"
+              ></progress>
+            </div>
+          </div>
+        </div>
+        <div class="table">
+          <p>Giấy Tờ Cá Nhân</p>
+          <div class="block4">
+            <div class="info">
+              <label for="file" class="title">Tài liệu:</label>
+              <input type="file" />
+              <label for="" class="title">Tải lên 30%:</label>
+              <progress
+                value="30"
+                max="100"
+                style="accent-color: red"
+              ></progress>
+            </div>
+          </div>
+        </div>
+        <div class="table">
+          <button type="submit">Gửi</button>
+          <button type="reset">Nhận</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

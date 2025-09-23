@@ -1,0 +1,17 @@
+table {
+  border: 1px solid white;
+}
+td,
+th {
+  border: 1px solid white;
+}
+th {
+  background-color: mediumblue;
+  color: white;
+}
+tr:nth-child(odd) {
+  background-color: aqua;
+}
+tr:hover td {
+  background-color: violet;
+}
