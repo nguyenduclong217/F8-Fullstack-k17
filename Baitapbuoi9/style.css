@@ -1,0 +1,451 @@
+* {
+  font-family: "Rajdhani", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: inline-block;
+  background: url(./img/737d432c-f918-4f48-8ad9-68ab2caf0bea.jfif);
+  background-size: cover;
+  /* height: 100vh; */
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.btn-submit {
+  background-color: rgba(0, 47, 255, 0.671);
+  border: none;
+  border: 2px solid white;
+  margin: 0 auto;
+  align-items: center;
+  font-size: 1.2rem;
+  font-family: Rajdhani, sans-serif;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.btn-submit:focus {
+  background-color: rgb(0, 47, 255);
+  border: 2px solid black;
+}
+
+.container,
+.head-login,
+.head-register {
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+}
+/* ============================ */
+
+.container {
+  /* margin: 0 200px 0 100px; */
+  width: 584px;
+  position: absolute;
+  top: 16%;
+  left: 11%;
+}
+.left-panel {
+  text-align: center;
+}
+.left-panel .logo {
+  margin-bottom: 20px;
+}
+h1 {
+  font-family: Titillium Web, sans-serif;
+  font-size: 6.5rem;
+  font-weight: 900;
+  position: relative;
+  top: -40px;
+  text-transform: uppercase;
+  color: aliceblue;
+  bottom: 20px;
+}
+.landing-info-pretitile {
+  text-transform: uppercase;
+  /* font-size: 2.1rem; */
+  color: white;
+}
+
+.left-panel .desc {
+  font-size: 1.1rem;
+  color: white;
+  width: 70%;
+  margin: 0 auto 20px;
+}
+.left-panel .button-box {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  border-radius: 12px;
+  border: 1px solid white;
+  /* margin-bottom: 20px; */
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.button-box .btn {
+  /* display: inline-block; */
+  padding: 20px 20px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  width: 50%;
+  font-family: Rajdhani, sans-serif;
+  font-weight: bold;
+}
+
+/* Khi radio được chọn */
+#login:checked ~ .container .left-panel .btn1 {
+  background: white;
+  color: #000000;
+  border-radius: 10px 2px 2px 10px;
+  /* display: block; */
+}
+#register:checked ~ .container .left-panel .btn2 {
+  background: white;
+  color: #000000;
+  border-radius: 2px 10px 10px 2px;
+}
+
+/* ===========================LOGIN================ */
+.head-login {
+  transition: transform 1s ease, visibility 0.5s ease;
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+}
+.head-login img {
+  position: absolute;
+  top: -73px;
+  left: -70px;
+}
+.head-login .listbox {
+  width: 450px;
+  background-color: white;
+  padding: 50px;
+  border-radius: 12px;
+  /* margin-top: 40px; */
+}
+
+.head-login .listbox .form-title {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.head-login .input-box {
+  position: relative;
+  padding-bottom: 35px;
+}
+.head-login .input-box input {
+  padding: 30px;
+  height: 39px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid gray;
+}
+.head-login .input-box label {
+  position: absolute;
+  left: 18px;
+  top: 20px;
+  color: #3e3f5e83;
+  font-weight: bold;
+  transition: 0.4s;
+}
+.head-login .remember-me {
+  display: flex;
+
+  /* justify-content: space-between;   */
+
+  margin-bottom: 25px;
+}
+.head-login .remember-me a {
+  margin-left: auto;
+  cursor: pointer;
+  color: #adafca;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 22px;
+}
+.head-login .remember-me a:hover {
+  color: rgb(0, 247, 255);
+}
+.head-login .remember-me span {
+  display: inline-block;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+.head-login .bottom button {
+  width: 100%;
+
+  height: 64px;
+  border-radius: 12px;
+  margin-bottom: 50px;
+}
+.head-login .register-link {
+  position: relative;
+}
+.head-login .register-link .desc {
+  position: absolute;
+  font-size: 0.9rem;
+  top: -9px;
+  left: 82px;
+  padding: 0 3px;
+  background-color: white;
+}
+.head-login .register-link .social-login {
+  display: flex;
+  margin: 40px 0 20px 0;
+  gap: 15px;
+  /* text-align: center; */
+  /* height: 20px; */
+  justify-content: center;
+}
+.head-login .register-link .social-login a {
+  transition: transform 0.4s ease;
+}
+.head-login .register-link .face {
+  padding: 14px;
+  color: white;
+  background: blue;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.head-login .register-link .twitch {
+  padding: 14px;
+  color: white;
+  background: rgba(0, 255, 255, 0.734);
+  border-radius: 8px;
+  font-size: 14px;
+}
+.head-login .register-link .swich {
+  padding: 14px;
+  color: white;
+  background: rgba(137, 43, 226, 0.709);
+  border-radius: 8px;
+  font-size: 14px;
+}
+.head-login .register-link .ytb {
+  padding: 14px;
+  color: white;
+  background: rgba(255, 0, 0, 0.848);
+  border-radius: 8px;
+  font-size: 14px;
+}
+.head-login .social-login a:hover {
+  transform: translateY(-8px);
+}
+/* ==============================END LOGIN================ */
+
+/* ==============================REGISTER=================== */
+.head-register {
+  /* height: 1000px; */
+  position: relative;
+}
+.head-register img {
+  position: absolute;
+  top: -73px;
+  left: -70px;
+}
+
+.head-register .listbox {
+  width: 450px;
+  background-color: white;
+  padding: 0 50px 50px;
+  border-radius: 12px;
+}
+
+.head-register .form-title {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.head-register .input-box {
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.head-register .input-box input {
+  padding: 30px;
+  height: 39px;
+
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid gray;
+}
+.head-register .input-box label {
+  position: absolute;
+  left: 18px;
+  top: 20px;
+  color: #3e3f5e83;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.head-register .small-text span {
+  /* background: crimson; */
+  /* width: 300px; */
+  display: flex;
+
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.head-register .listbox .small-text {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.head-register .listbox .bottom button {
+  width: 100%;
+  padding: 10px;
+  height: 64px;
+  border-radius: 12px;
+  margin-bottom: 13px;
+}
+.head-register .listbox .form {
+  font-size: 0.8rem;
+}
+.head-register .listbox .form a {
+  color: cyan;
+  font-weight: bold;
+}
+
+/* .head-login {
+  display: none;
+} */
+#register:checked ~ .head-login {
+  opacity: 0.3;
+  /* visibility: hidden; */
+  transform: translateX(1350px);
+  visibility: visible;
+  visibility: hidden;
+}
+#login:checked ~ .head-register {
+  opacity: 0.3;
+  visibility: visible;
+  transform: translateX(1350px);
+  visibility: hidden;
+}
+.head-login {
+  position: relative;
+}
+.head-register {
+  position: absolute;
+  top: 0;
+  transition: transform 1s ease, visibility 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 1;
+  visibility: visible;
+}
+.head-register {
+  transform: translateX(800px);
+}
+.head-login {
+  transform: translateX(800px);
+}
+
+.head-login .input-box input,
+.head-register .input-box input {
+  border: 1px solid rgba(0, 0, 255, 0.329);
+}
+.head-login .input-box input:focus,
+.head-register .input-box input:focus {
+  border: 1px solid rgb(0, 0, 255);
+  outline: none;
+}
+.head-login input:focus + label,
+.head-login input:not(:placeholder-shown) + label,
+.head-register input:focus + label,
+.head-register input:not(:placeholder-shown) + label {
+  padding: 2px;
+  background-color: white;
+  margin-top: -32px;
+  line-height: 1.5;
+  font-family: Rajdhani, sans-serif;
+  font-size: 0.8rem;
+}
+.head-login .input-box label {
+  position: absolute;
+  left: 18px;
+  top: 20px;
+  color: #3e3f5e83;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.head-login .remember-me label span,
+.head-register .small-text label span {
+  position: relative;
+}
+.head-login span::before,
+.listbox span::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 255, 0.329);
+  border-radius: 5px;
+}
+.head-login span::after,
+.head-register span::after {
+  content: "+";
+  display: block;
+  font-size: 35px;
+  color: white;
+  rotate: 45deg;
+  font-weight: bold;
+  position: absolute;
+  display: none;
+}
+.head-login span::after {
+  top: -10px;
+  left: 1px;
+}
+.head-register span::after {
+  top: 417px;
+}
+
+.head-login input:checked + span::after,
+.head-register input:checked + span::after {
+  display: block;
+}
+.head-login input:checked + span::before,
+.head-register input:checked + span::before {
+  background-color: rgba(0, 0, 255, 0.527);
+}
+@media screen and (max-width: 1364.98px) {
+  body {
+    width: 1000px;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+  }
+  .container .left-panel {
+    margin: 20px auto;
+    position: relative;
+    width: 50%;
+  }
+  .container .left-panel .desc {
+    display: none;
+  }
+  .head-login {
+    margin-top: 450px;
+    position: absolute;
+    top: 25px;
+    left: 400px;
+  }
+  .head-register {
+    position: absolute;
+    margin-top: 480px;
+    left: -390px;
+  }
+}
